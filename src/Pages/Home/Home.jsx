@@ -23,7 +23,7 @@ const Home = () => {
                     <h1 className="text-4xl"> News Coming Soon ...</h1>
                 </div>
                 {/* right */}
-                <div className="border border-black">
+                <div className="">
                     <RightSideNav></RightSideNav>
                 </div>
 

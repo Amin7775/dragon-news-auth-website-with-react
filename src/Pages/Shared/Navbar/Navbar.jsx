@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-// import { FaUserCircle } from 'react-icons/fa';
+// import { FaGoogle } from 'react-icons/fa';
 import userDefaultPicture from "../../../assets/user.png"
 
 
@@ -9,6 +9,7 @@ const Navbar = () => {
         <li><NavLink to={"/"}>Home</NavLink></li>
         <li><NavLink to={"/about"}>About</NavLink></li>
         <li><NavLink to={"/career"}>Career</NavLink></li>
+        <li><NavLink to={"/login"}>Login</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -30,7 +31,7 @@ const Navbar = () => {
   </div>
   <div className="navbar-end">
     <img width={"45px"} src={userDefaultPicture} alt="" className="mr-2"/>
-    <Link>
+    <Link to={"/login"}>
     <button className="btn bg-[#403F3F] text-white py-2 px-11 font-semibold">Login</button>
     </Link>
   </div>
